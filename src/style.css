@@ -39,3 +39,31 @@
 .blue{--logo-background:#436f80}
 .ticket{--logo-background:#004615}
 .forest{--logo-background:#1a3227}
+
+/* SVG ornaments cannot be substituted with platform emoji. */
+.little-star,.tiny-star,.alcohol-star,.orbit,.contact-spark{display:inline-flex;flex-shrink:0;align-items:center;justify-content:center;line-height:1}
+.little-star svg,.tiny-star svg,.alcohol-star svg,.orbit svg,.contact-spark svg{display:block;width:1em;height:1em}
+.poster-caption .expand-button{position:static;box-shadow:none;transform:none;width:29px;height:29px;background:transparent}
+/* Give the poster the phone's usable width and show every variant in full. */
+@media(max-width:640px){
+ main{padding-left:16px;padding-right:16px}
+ .intro{padding:24px 0 22px}
+ .intro h1{font-size:clamp(25px,7.35vw,34px);line-height:1.1;letter-spacing:-.8px}
+ .variant-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:0;padding:0;overflow:visible}
+ .variant-button{width:100%;min-width:0;min-height:65px;padding:9px 8px;gap:9px;border-color:#e1e3d9}
+ .variant-text{padding-right:6px}
+ .variant-text small{font-size:8px;margin-bottom:4px}
+ .variant-text strong{font-size:11px;white-space:normal;line-height:1.35}
+ .variant-text>span{display:none}
+ .selection-dot{top:6px;right:6px}
+ .poster-stage{padding:0;background:transparent}
+ .poster-display{max-width:none;box-shadow:0 6px 18px #263b301a}
+ .poster-caption{gap:8px;align-items:center;margin-top:12px}
+ .poster-caption>span{font-size:10px;line-height:1.5;min-width:0}
+ .caption-divider{margin:0 4px}
+ .poster-caption>div{gap:5px;flex-shrink:0}
+ .poster-caption button,.poster-caption .expand-button{width:38px;height:40px}
+ .gallery{gap:22px}
+ .details{padding-top:0}
+ .detail-prices{margin-top:0}
+}

@@ -9,8 +9,8 @@
 .expand-button{top:8px;right:8px;bottom:auto;width:28px;height:28px}
 
 /* The original supplied artwork, with print measurements and contacts outside the crop. */
-.brand-original{position:relative;width:17cqw;height:17cqw;padding:0;border:0;overflow:hidden;background:#004615;flex-shrink:0}
-.brand-original img{position:absolute;width:164.5%;max-width:none;height:auto;left:-24.5%;top:-24.5%}
+.brand-original{position:relative;width:17cqw;height:17cqw;padding:0;border:0;overflow:hidden;background:var(--logo-background,#153c2b);isolation:isolate;flex-shrink:0}
+.brand-original img{position:absolute;width:164.5%;max-width:none;height:auto;left:-24.5%;top:-24.5%;filter:grayscale(1) contrast(3);mix-blend-mode:screen}
 
 /* Contemporary classic: the same still life, quiet type, and a clear invitation. */
 .classic .poster-top{color:#f5efdf}
@@ -33,3 +33,9 @@
 .ticket .price-block+.price-block,.ticket .alcohol,.ticket .poster-footer{border-color:#739465}
 .ticket .alcohol-star{color:#d2d0a3}
 .ticket-code{color:#acc09b}
+
+/* Screen the unchanged white artwork over each poster's own colour. */
+.classic{--logo-background:#153c2b}
+.blue{--logo-background:#436f80}
+.ticket{--logo-background:#004615}
+.forest{--logo-background:#1a3227}

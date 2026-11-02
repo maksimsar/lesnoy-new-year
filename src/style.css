@@ -67,3 +67,61 @@
  .details{padding-top:0}
  .detail-prices{margin-top:0}
 }
+
+/* Larger event theme and offer copy across all five printable posters. */
+.poster .poster-hero{height:53%}
+.poster .poster-eyebrow{font-size:3cqw;letter-spacing:.12cqw;line-height:1.35;font-weight:600;margin-bottom:3.5cqw}
+.poster .poster-offer{padding:3.5cqw 7.7cqw 0}
+.poster .offer-heading{font-size:4.4cqw;margin-bottom:3cqw}
+.poster .price-block strong{font-size:7.7cqw}
+.poster .price-block strong span{font-size:5.5cqw}
+.poster .per-guest{font-size:2.45cqw;margin-top:1cqw}
+.poster .price-block p{font-size:2.65cqw;line-height:1.45;margin-top:1.6cqw}
+.poster .prices{gap:3cqw}
+.poster .price-block+.price-block{padding-left:3cqw}
+.poster .alcohol{margin-top:3cqw;padding-top:2.7cqw}
+.poster .alcohol p{font-size:2.55cqw;line-height:1.5}
+.poster .poster-footer{margin-top:2.8cqw;padding-top:2.6cqw}
+.poster .poster-footer>span{font-size:2.2cqw;line-height:1.5}
+.poster .poster-footer a,.poster .poster-footer>div>span{font-size:2.65cqw}
+.forest .poster-offer{padding-top:0}
+.forest h2{font-size:8.6cqw}
+.ticket .poster-offer{padding:3.5cqw 0 0}
+.ticket .poster-hero-text{top:34%}
+.ticket h2{font-size:10.7cqw}
+.ticket .poster-tagline{margin-top:2.4cqw}
+.ticket-code{bottom:3.4cqw;font-size:1.15cqw}
+/* New snowy forest photograph, with a matching slate-green logo background. */
+.snow{--logo-background:#304e54;color:#294a4c;background:#eef0e8}
+.snow .poster-top{color:#faf7e9}
+.snow .poster-hero{background:#304e54}
+.snow .still-life{object-position:center 52%}
+.snow .poster-hero:after{background:linear-gradient(180deg,#193a45a8,#193a4530 65%,#193a4566)}
+.snow .poster-hero-text{top:34%;text-align:center;left:5%;right:5%}
+.snow h2{font-size:11.5cqw;letter-spacing:-.5cqw}
+.snow h2 i{color:#f3ead5}
+.snow .poster-tagline{margin-top:3cqw}
+.snow .poster-offer{background:#eef0e8}
+.snow .alcohol-star{color:#7a9183}
+.detail-prices>div>span{font-size:13px}
+.detail-prices strong{font-size:30px}
+.detail-prices small,.detail-prices p{font-size:12px;line-height:1.5}
+.detail-alcohol p{font-size:13px}
+.term-item h3{font-size:28px}
+.term-item p{font-size:15px;line-height:1.75}
+.term-item strong{font-size:32px}
+.term-item strong small{font-size:14px}
+.contact-section p{font-size:14px;line-height:1.75}
+@media(max-width:640px){
+ .variant-button:last-child{grid-column:1/-1}
+ .detail-prices{gap:14px}
+ .detail-prices>div>span{font-size:12px}
+ .detail-prices strong{font-size:29px}
+ .detail-prices small,.detail-prices p{font-size:12px}
+ .terms{grid-template-columns:1fr}
+ .term-item h3{font-size:27px}
+ .term-item p{font-size:15px}
+ .term-item strong{font-size:32px}
+ .term-item strong small{font-size:14px;display:inline;margin-left:6px}
+ .contact-section p{font-size:14px}
+}

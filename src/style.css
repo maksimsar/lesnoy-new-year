@@ -249,3 +249,5 @@
 @media(max-width:640px) {
  .variant-button:last-child:nth-child(even) { grid-column:auto; }
 }
+
+.typewall .brand-original { width:11.5cqw; height:11.5cqw; }

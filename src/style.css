@@ -177,3 +177,75 @@
 .sun { --logo-background:#345638; }
 .sun .poster-hero:after { background:linear-gradient(90deg,#173d2bea,#173d2b6b 61%,#173d2b12); }
 .sun .poster-offer { background:#fff3d9; color:#26442a; }
+
+/* Oversized lettering on a solid evergreen field. */
+.typewall { --logo-background:#064737; }
+.typewall .poster-top { color:#fff0bd; }
+.poster.typewall .poster-hero { height:56%; background:#064737; color:#fff0bd; }
+.typewall .poster-hero:after { content:none; }
+.typewall .poster-hero-text { top:24%; left:7.7%; right:5%; }
+.poster.typewall .poster-eyebrow {
+ font-family:'Oswald',sans-serif;
+ font-size:13.8cqw;
+ font-weight:700;
+ line-height:.96;
+ letter-spacing:-.35cqw;
+ margin:0 0 2.1cqw;
+}
+.typewall h2 { font-size:4.5cqw; line-height:1.2; letter-spacing:0; }
+.typewall h2 br { display:none; }
+.typewall h2 i::before { content:' '; }
+.typewall .poster-tagline { font-size:2.5cqw; margin-top:1.8cqw; }
+.typewall .poster-offer { background:#fff0bd; color:#064737; }
+
+/* A clean photo strip above a price list that reads vertically. */
+.photoband { --logo-background:#193e32; }
+.photoband .poster-top { color:#fff8e2; }
+.photoband .poster-top-note { text-shadow:0 1px 5px #142d24,0 1px 2px #142d24; }
+.poster.photoband .poster-hero { height:46%; background:#fff8e2; color:#193e32; }
+.photoband .poster-hero:after { content:none; }
+.photoband .still-life { height:59%; object-position:center 46%; }
+.photoband .poster-hero-text { top:63%; left:7.7%; right:7.7%; }
+.poster.photoband .poster-eyebrow { margin-bottom:1.1cqw; }
+.photoband h2 { font-size:7.6cqw; line-height:1.02; letter-spacing:-.34cqw; }
+.photoband h2 br { display:none; }
+.photoband h2 i::before { content:' '; }
+.photoband .poster-tagline { font-size:2.55cqw; margin-top:1.3cqw; }
+.photoband .poster-offer { background:#fff8e2; color:#193e32; }
+.poster.photoband .prices { display:grid; grid-template-columns:1fr; gap:0; }
+.photoband .price-block {
+ display:grid;
+ grid-template-columns: 1fr 1.25fr;
+ align-items:center;
+ padding:1.5cqw 0;
+ border-top:1px solid #8a9c83;
+}
+.poster.photoband .price-block + .price-block { padding-left:0; border-left:0; }
+.poster.photoband .price-block strong { font-size:10.5cqw; }
+.photoband .price-block p { grid-column:2; grid-row:1 / span 2; margin:0; }
+
+/* The slanted colour band leads into the offer without tilting the fine print. */
+.retro { --logo-background:#224556; }
+.retro .poster-top { color:#fff0c6; }
+.poster.retro .poster-hero { height:53%; background:#224556; color:#fff0c6; }
+.retro .poster-hero:after {
+ background:#bf561d;
+ clip-path:polygon(0 52%,100% 22%,100% 81%,0 100%);
+}
+.retro .poster-hero-text { top:35%; left:9%; right:6%; }
+.poster.retro .poster-eyebrow { font-size:3.65cqw; margin:0 0 2.4cqw; }
+.retro h2 {
+ font-family:'Oswald',sans-serif;
+ font-size:12cqw;
+ line-height:1.02;
+ transform:rotate(-8deg);
+ transform-origin:left center;
+}
+.retro h2 i { font-family:inherit; font-style:normal; color:inherit; }
+.retro .poster-tagline { font-size:2.6cqw; margin-top:3cqw; }
+.retro .poster-offer { background:#ffefcc; color:#224556; }
+.retro .prices { border-top:2px solid #bf561d; padding-top:2cqw; }
+
+@media(max-width:640px) {
+ .variant-button:last-child:nth-child(even) { grid-column:auto; }
+}

@@ -1,0 +1,90 @@
+/* Full-bleed evening photograph, with a fine gilt frame and a continuous dark base. */
+.poster.nightframe::before {
+  content: '';
+  position: absolute;
+  inset: 3.1cqw;
+  z-index: 4;
+  border: 1px solid #e7c68180;
+  pointer-events: none;
+}
+.nightframe .still-life {
+  object-position: 69% center;
+  filter: saturate(1.18);
+}
+.nightframe .poster-hero::after {
+  background: linear-gradient(90deg, #092e23e6, #092e2359 75%),
+    linear-gradient(0deg, #092e23 1%, #092e23eb 42%, transparent 69%);
+}
+.nightframe .poster-hero-text {
+  top: 35%;
+}
+.poster.nightframe .poster-eyebrow {
+  font-size: 3.25cqw;
+  color: #fff0cd;
+  letter-spacing: .1cqw;
+}
+.nightframe h2 {
+  font-size: 11.5cqw;
+}
+.nightframe .poster-tagline {
+  color: #fff0cd;
+}
+.nightframe .price-block strong,
+.nightframe .alcohol-star {
+  color: #f6cb74;
+}
+.nightframe .price-block p,
+.nightframe .alcohol p,
+.nightframe .poster-footer,
+.nightframe .offer-heading {
+  color: #fff0cd;
+}
+.nightframe .price-block + .price-block,
+.nightframe .alcohol,
+.nightframe .poster-footer {
+  border-color: #e7c68166;
+}
+
+/* Travel-poster geometry: the lettering sits in a warm pennant above the forest. */
+.alpine .poster-hero::after {
+  background: #dc6023;
+  clip-path: polygon(0 0, 100% 0, 100% 68%, 55% 85%, 0 68%);
+}
+.alpine .poster-hero-text {
+  top: 28%;
+}
+.poster.alpine .poster-eyebrow {
+  font-size: 2.8cqw;
+  margin-bottom: 2cqw;
+  color: #fff3d4;
+}
+.alpine h2 {
+  font-size: 11.2cqw;
+  line-height: 1;
+  color: #fff3d4;
+}
+.alpine .poster-tagline {
+  margin-top: 2.1cqw;
+  font-size: 2.45cqw;
+  color: #fff3d4;
+  text-shadow: 0 1px 3px #5b240a;
+}
+.alpine .still-life {
+  object-position: center 60%;
+  filter: saturate(1.15);
+}
+.alpine .poster-offer {
+  color: #70351f;
+}
+.alpine .per-guest {
+  color: #805940;
+}
+.alpine .price-block strong,
+.alpine .alcohol-star {
+  color: #b54c1f;
+}
+.alpine .price-block + .price-block,
+.alpine .alcohol,
+.alpine .poster-footer {
+  border-color: #a8835d80;
+}

@@ -256,3 +256,81 @@
 .photoband .poster-tagline {
  color:#193e32;
 }
+
+/* Six separate art directions for the extended collection. */
+.editorial { --logo-background:#523d22; color:#523d22; }
+.poster.editorial .poster-hero { height:53%; background:#f5e7cc; color:#523d22; }
+.editorial .poster-top { color:#523d22; }
+.editorial .still-life { inset:auto 4% 4% auto; width:43%; height:70%; border-radius:50% 50% 0 0; object-position:70%; }
+.editorial .poster-hero:after { content:none; }
+.editorial .poster-hero-text { top:32%; left:7.7%; right:5%; }
+.poster.editorial .poster-eyebrow { width:52%; font-size:2.6cqw; letter-spacing:.15cqw; margin-bottom:4cqw; }
+.editorial h2 { font-size:11.5cqw; line-height:.98; letter-spacing:-.5cqw; }
+.editorial h2 i { color:#af4d31; font-size:8.2cqw; }
+.editorial .poster-tagline { color:#523d22; font-size:2.6cqw; width:45%; margin-top:4cqw; }
+.editorial .poster-offer { color:#f5e7cc; background:#523d22; }
+.editorial .per-guest { color:#e4d0a8; }
+
+.postcard { --logo-background:#21544b; color:#21544b; }
+.poster.postcard .poster-hero { height:53%; background:#e8f2eb; color:#21544b; }
+.postcard .poster-top { color:#21544b; }
+.postcard .brand-original { width:11.5cqw; height:11.5cqw; }
+.postcard .still-life { inset:auto 7.7% 0; width:84.6%; height:40%; object-position:center 44%; border:1cqw solid #fffdf4; }
+.postcard .poster-hero:after { content:none; }
+.postcard .poster-hero-text { top:22%; left:7.7%; right:7.7%; text-align:center; }
+.poster.postcard .poster-eyebrow { font-size:2.8cqw; margin-bottom:2cqw; }
+.postcard h2 { font-size:8.8cqw; line-height:1; letter-spacing:-.3cqw; }
+.postcard h2 i { color:#a93d2e; }
+.postcard .poster-tagline { color:#21544b; margin-top:1.5cqw; font-size:2.1cqw; }
+.postcard .poster-offer { background:#e8f2eb; }
+.postcard .poster-footer { border-top-style:dashed; }
+
+.modernist { --logo-background:#193d32; }
+.poster.modernist .poster-hero { height:53%; background:#ebba46; color:#193d32; }
+.modernist .poster-hero:after { background:#193d32; width:12%; left:auto; right:0; }
+.modernist .poster-top { right:17%; color:#193d32; }
+.modernist .brand-original { width:13cqw; height:13cqw; }
+.modernist .poster-hero-text { top:27%; left:7.7%; right:15%; }
+.poster.modernist .poster-eyebrow { font-size:3cqw; margin-bottom:2cqw; }
+.modernist h2 { font-family:'Oswald',sans-serif; font-size:19cqw; font-weight:700; line-height:.92; letter-spacing:-.7cqw; }
+.modernist .poster-tagline { color:#193d32; font-size:2.55cqw; margin-top:2.5cqw; }
+.modernist .poster-offer { background:#193d32; color:#fff1c8; }
+.modernist .per-guest { color:#dfcfa7; }
+.modernist .price-block strong { color:#ebba46; }
+
+.geometry { --logo-background:#ad402e; }
+.poster.geometry .poster-hero { height:53%; background:#f5d6a9; color:#15453b; }
+.geometry .poster-top { color:#15453b; }
+.geometry .poster-hero:after { width:32cqw; height:32cqw; border-radius:50%; background:#ad402e; inset:auto -5cqw -8cqw auto; box-shadow:-69cqw -23cqw 0 -6cqw #15453b, -12cqw -48cqw 0 -7cqw #e6a62b; }
+.geometry .poster-hero-text { top:33%; left:13%; right:8%; }
+.poster.geometry .poster-eyebrow { font-size:3cqw; margin-bottom:4cqw; }
+.geometry h2 { font-family:'Golos Text',sans-serif; font-weight:800; font-size:11cqw; line-height:1.02; letter-spacing:-.5cqw; }
+.geometry h2 i { color:#ad402e; font-size:7cqw; }
+.geometry .poster-tagline { color:#15453b; font-size:2.6cqw; margin-top:3cqw; }
+.geometry .poster-offer { background:#fff3df; color:#15453b; }
+.geometry .price-block strong { color:#ad402e; }
+
+.nightframe { --logo-background:#153e2f; background:#153e2f; color:#fff0cd; }
+.poster.nightframe .poster-hero { height:53%; background:#153e2f; overflow:visible; color:#fff0cd; }
+.nightframe .still-life { height:188.7%; }
+.nightframe .poster-hero:after { height:188.7%; background:linear-gradient(90deg,#102f22db,#102f2266),linear-gradient(0deg,#102f22 1%,#102f22d9 42%,transparent 60%); }
+.nightframe .poster-top { color:#fff0cd; }
+.nightframe .poster-hero-text { top:35%; left:7.7%; right:7%; }
+.nightframe h2 { font-size:12cqw; line-height:1; letter-spacing:-.5cqw; }
+.nightframe h2 i { color:#f6cb74; }
+.nightframe .poster-tagline { font-size:2.6cqw; margin-top:3cqw; }
+.nightframe .poster-offer { background:transparent; color:#fff0cd; }
+.nightframe .per-guest { color:#e6d9ba; }
+.nightframe .alcohol-star { color:#f6cb74; }
+
+.alpine { --logo-background:#8b341d; }
+.poster.alpine .poster-hero { height:53%; background:#e76e29; color:#fff3d4; }
+.alpine .poster-top { color:#fff3d4; }
+.alpine .still-life { inset:auto 0 0; width:100%; height:55%; object-position:center; }
+.alpine .poster-hero:after { background:#e76e29; clip-path:polygon(0 0,100% 0,100% 42%,50% 68%,0 42%); }
+.alpine .brand-original { width:11cqw; height:11cqw; }
+.alpine .poster-hero-text { top:22%; left:7%; right:7%; text-align:center; }
+.poster.alpine .poster-eyebrow { font-size:2.6cqw; margin-bottom:2.2cqw; }
+.alpine h2 { font-family:'Oswald',sans-serif; font-size:12.2cqw; line-height:.98; font-weight:600; letter-spacing:.2cqw; }
+.alpine .poster-tagline { margin-top:4cqw; font-size:2.55cqw; text-shadow:0 1px 4px #16362d; }
+.alpine .poster-offer { background:#fff3d4; color:#8b341d; }

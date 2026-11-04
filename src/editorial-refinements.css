@@ -1,0 +1,149 @@
+/* Editorial cover: a separate image column leaves the lettering on solid paper. */
+.editorial {
+  --logo-background: #4b3827;
+  color: #4b3827;
+}
+
+.poster.editorial .poster-hero {
+  background: #f6e9d1;
+  color: #4b3827;
+}
+
+.editorial .poster-top {
+  color: #4b3827;
+}
+
+.editorial .still-life {
+  inset: auto 5% 4% auto;
+  width: 38%;
+  height: 73%;
+  object-position: 76% center;
+  border-radius: 22cqw 22cqw 0 0;
+}
+
+.editorial .poster-hero-text {
+  top: 31%;
+  left: 7.7%;
+  right: 5%;
+}
+
+.poster.editorial .poster-eyebrow {
+  width: 49%;
+  font-size: 2.8cqw;
+  line-height: 1.3;
+  letter-spacing: .08cqw;
+  margin-bottom: 3cqw;
+}
+
+.editorial h2 {
+  width: 49%;
+  font-size: 9.5cqw;
+  line-height: 1.06;
+  letter-spacing: -.4cqw;
+}
+
+.editorial h2 i {
+  font-size: 7cqw;
+  color: #a13d2d;
+}
+
+.editorial .poster-tagline {
+  width: 47%;
+  margin-top: 3cqw;
+  color: #4b3827;
+  font-size: 2.6cqw;
+  line-height: 1.45;
+}
+
+.editorial .poster-offer {
+  background: #4b3827;
+  color: #f9edcf;
+}
+
+.editorial .price-block + .price-block,
+.editorial .alcohol,
+.editorial .poster-footer {
+  border-color: #a99168;
+}
+
+.editorial .alcohol-star {
+  color: #e2bd77;
+}
+
+/* Winter correspondence: centred lettering, framed landscape and fine perimeter. */
+.postcard {
+  --logo-background: #245348;
+  color: #245348;
+}
+
+.postcard::before {
+  content: '';
+  position: absolute;
+  inset: 3cqw;
+  border: 1px solid #b7c3aa;
+  z-index: 4;
+  pointer-events: none;
+}
+
+.poster.postcard .poster-hero,
+.postcard .poster-offer {
+  background: #f7f3e5;
+  color: #245348;
+}
+
+.postcard .poster-top {
+  top: 5.8%;
+  color: #245348;
+}
+
+.postcard .poster-hero-text {
+  top: 20%;
+  left: 7.7%;
+  right: 7.7%;
+}
+
+.poster.postcard .poster-eyebrow {
+  font-size: 2.7cqw;
+  line-height: 1.3;
+  margin-bottom: 1.5cqw;
+  letter-spacing: .08cqw;
+}
+
+.postcard h2 {
+  font-size: 8.1cqw;
+  line-height: 1;
+  letter-spacing: -.3cqw;
+}
+
+.postcard h2 i {
+  color: #a63f32;
+}
+
+.postcard .poster-tagline {
+  margin-top: 1.2cqw;
+  color: #245348;
+  font-size: 2.4cqw;
+  line-height: 1.4;
+}
+
+.postcard .still-life {
+  inset: auto 7.7% 0;
+  width: 84.6%;
+  height: 36%;
+  object-position: center 44%;
+  border: 1cqw solid #fffdf6;
+  box-shadow: 0 .5cqw 1cqw #254d3b1a;
+}
+
+.postcard .price-block + .price-block,
+.postcard .alcohol,
+.postcard .poster-footer {
+  border-color: #b7c3aa;
+}
+
+.postcard .alcohol-star {
+  color: #a63f32;
+}
+
+.editorial .brand-original { width:12cqw; height:12cqw; }
+.editorial .poster-top-note { align-self:flex-start; }

@@ -1,0 +1,197 @@
+/* Two graphic directions: a typographic playbill and painted ornaments. */
+.poster.modernist {
+  --logo-background: #173f32;
+  color: #173f32;
+}
+
+.poster.modernist .poster-hero {
+  background: #efbf48;
+  color: #173f32;
+}
+
+.modernist .poster-top {
+  color: #173f32;
+  right: 17%;
+}
+
+.modernist .brand-original {
+  width: 11.5cqw;
+  height: 11.5cqw;
+}
+
+.modernist .poster-hero:after {
+  background: #173f32;
+  width: 11%;
+  right: 0;
+  left: auto;
+  border-left: .55cqw solid #173f32;
+  box-shadow: -.8cqw 0 0 #efbf48, -1.1cqw 0 0 #173f32;
+}
+
+.modernist .poster-hero-text {
+  top: 29%;
+  left: 7.7%;
+  right: 16%;
+}
+
+.poster.modernist .poster-eyebrow {
+  color: #173f32;
+  font-size: 3.1cqw;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: .12cqw;
+  margin-bottom: 2.6cqw;
+}
+
+.modernist h2,
+.modernist h2 i {
+  color: #173f32;
+  font-family: 'Oswald', sans-serif;
+  font-size: 18.5cqw;
+  font-weight: 700;
+  font-style: normal;
+  line-height: .93;
+  letter-spacing: -.65cqw;
+}
+
+.modernist .poster-tagline {
+  color: #173f32;
+  font-size: 2.7cqw;
+  line-height: 1.45;
+  margin-top: 2.8cqw;
+}
+
+.modernist .poster-offer {
+  background: #173f32;
+  color: #fff2cc;
+}
+
+.modernist .offer-heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 4.3cqw;
+  font-weight: 500;
+  letter-spacing: .08cqw;
+}
+
+.modernist .price-block strong,
+.modernist .alcohol-star {
+  color: #efbf48;
+}
+
+.modernist .per-guest {
+  color: #fff2cc;
+}
+
+.modernist .price-block + .price-block,
+.poster.modernist .alcohol,
+.poster.modernist .poster-footer {
+  border-color: #fff2cc66;
+}
+
+.poster.geometry {
+  --logo-background: #b83f2a;
+  color: #164a3c;
+}
+
+.poster.geometry .poster-hero {
+  background: #ffe3b6;
+  color: #164a3c;
+}
+
+.geometry .poster-top {
+  color: #164a3c;
+}
+
+.geometry .brand-original {
+  width: 13cqw;
+  height: 13cqw;
+}
+
+.geometry .poster-hero:before {
+  content: '';
+  position: absolute;
+  width: 10cqw;
+  height: 10cqw;
+  top: 5.7cqw;
+  left: 44cqw;
+  border-radius: 50%;
+  background: #e9aa2f;
+  box-shadow: inset 0 0 0 .4cqw #164a3c;
+}
+
+.geometry .poster-hero:after {
+  inset: auto -3cqw -5cqw auto;
+  width: 27cqw;
+  height: 27cqw;
+  background: #b83f2a;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 .5cqw #ffe3b6,
+    inset 0 0 0 1.1cqw #b83f2a,
+    inset 0 0 0 1.5cqw #e9aa2f;
+}
+
+.geometry .poster-hero-text {
+  top: 32%;
+  left: 7.7%;
+  right: 7.7%;
+}
+
+.poster.geometry .poster-eyebrow {
+  color: #164a3c;
+  font-size: 3.1cqw;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: .1cqw;
+  margin-bottom: 3.4cqw;
+}
+
+.geometry h2 {
+  color: #164a3c;
+  font-family: 'Golos Text', sans-serif;
+  font-size: 10.9cqw;
+  font-weight: 800;
+  line-height: 1.08;
+  letter-spacing: -.5cqw;
+}
+
+.geometry h2 i {
+  color: #b83f2a;
+  font-family: Georgia, serif;
+  font-size: 9cqw;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: -.35cqw;
+}
+
+.geometry .poster-tagline {
+  color: #164a3c;
+  font-size: 2.8cqw;
+  line-height: 1.45;
+  width: 68%;
+  margin-top: 3cqw;
+}
+
+.geometry .poster-offer {
+  background: #fff5e2;
+  color: #164a3c;
+}
+
+.geometry .offer-heading {
+  color: #164a3c;
+  font-style: italic;
+}
+
+.geometry .price-block strong,
+.geometry .alcohol-star {
+  color: #b83f2a;
+}
+
+.geometry .per-guest {
+  color: #164a3c;
+}
+
+.geometry .price-block + .price-block,
+.poster.geometry .alcohol,
+.poster.geometry .poster-footer {
+  border-color: #164a3c55;
+}

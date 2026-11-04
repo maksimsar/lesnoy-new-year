@@ -13,6 +13,9 @@ import Asterisk from 'lucide-react/dist/esm/icons/asterisk.js';
 import {toPng} from 'html-to-image';
 import './fonts.css';
 import './style.css';
+import './editorial-refinements.css';
+import './photo-refinements.css';
+import './graphic-refinements.css';
 
 const variants = [
  {id:'classic',name:'Классический вечер',type:'Современно и элегантно',color:'#244e3d',description:'Хвоя, мандарины и глубокий зелёный. Современная классика для большого новогоднего вечера.',headline:<>Новый год<br/><i>в кругу своих.</i></>},
@@ -29,6 +32,12 @@ const variants = [
  {id:'typewall',name:'Крупным планом',type:'Большая типографика'},
  {id:'photoband',name:'Зимний кадр',type:'Панорамное фото и крупные цены',photo:'sunlit-spruce.jpg',alt:'Заснеженные ели с красными и золотыми шарами'},
  {id:'retro',name:'Ретроэкспресс',type:'Диагональная композиция'},
+ {id:'editorial',name:'Золотой выпуск',type:'Журнальная обложка',photo:'frosted-berries.jpg',alt:'Хвоя и праздничные красные ягоды'},
+ {id:'postcard',name:'Письмо из Лесного',type:'Светлая зимняя открытка',photo:'snow-forest.jpg',alt:'Заснеженный еловый лес'},
+ {id:'modernist',name:'Новогодний плакат',type:'Крупный шрифт и горчичный цвет',headline:<>НОВЫЙ<br/>ГОД.</>},
+ {id:'geometry',name:'Праздничный ритм',type:'Графические ёлочные шары',headline:<>Новый год<br/><i>в кругу своих.</i></>},
+ {id:'nightframe',name:'Вечер в огнях',type:'Фотография на весь лист',photo:'emerald-spruce.jpg',alt:'Нарядная ель с красными шарами и гирляндой'},
+ {id:'alpine',name:'Лесной маршрут',type:'Альпийский постер',photo:'sunlit-spruce.jpg',alt:'Солнечный еловый лес с новогодними шарами',headline:<>НОВЫЙ ГОД<br/>В ЛЕСНОМ</>},
 ];
 function Brand(){return <div className="brand brand-original"><img src={import.meta.env.BASE_URL+"assets/lesnoy-brand.webp"} alt="Лесной — банкетный комплекс"/></div>}
 function Price({amount,children}){return <div className="price-block"><strong>{amount}<span> ₽</span></strong><span className="per-guest">за гостя</span><p>{children}</p></div>}

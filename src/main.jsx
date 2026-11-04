@@ -18,11 +18,11 @@ import './photo-refinements.css';
 import './graphic-refinements.css';
 
 const variants = [
- {id:'classic',name:'Классический вечер',type:'Современно и элегантно',color:'#244e3d',description:'Хвоя, мандарины и глубокий зелёный. Современная классика для большого новогоднего вечера.',headline:<>Новый год<br/><i>в кругу своих.</i></>},
- {id:'blue',name:'Голубой огонёк',type:'Праздник в эфире',color:'#487b8b',description:'Тот самый огонёк, на который хочется заглянуть. Только теперь — всей компанией.',headline:<>Собираемся<br/><i>на огонёк.</i></>},
+ {id:'classic',name:'Классический вечер',type:'Современно и элегантно',color:'#244e3d',description:'Хвоя, мандарины и глубокий зелёный. Современная классика для большого новогоднего вечера.',headline:<>Новый год<br/><i>в кругу своих</i></>},
+ {id:'blue',name:'Голубой огонёк',type:'Праздник в эфире',color:'#487b8b',description:'Тот самый огонёк, на который хочется заглянуть. Только теперь — всей компанией.',headline:<>Собираемся<br/><i>на огонёк</i></>},
  {id:'ticket',name:'Билет на праздник',type:'Фирменный зелёный',color:'#004615',description:'Личный пропуск в вечер без рабочих вопросов. Сохраните билет и зовите коллег.',headline:<>ВАШ БИЛЕТ<br/>В НОВЫЙ ГОД</>},
- {id:'forest',name:'Лесной вечер',type:'Сдержанная классика',color:'#253b32',description:'Глубокий зелёный и спокойная типографика. Праздник, для которого не нужны лишние слова.',headline:<>Хороший год<br/>начинается<br/><i>с хорошей<br/>компании.</i></>},
- {id:'snow',name:'Зимний лес',type:'Заснеженные ели',color:'#304e54',description:'Заснеженный еловый лес, спокойные зимние оттенки и вечер в хорошей компании.',headline:<>Новый год<br/><i>среди своих.</i></>},
+ {id:'forest',name:'Лесной вечер',type:'Сдержанная классика',color:'#253b32',description:'Глубокий зелёный и спокойная типографика. Праздник, для которого не нужны лишние слова.',headline:<>Хороший год<br/>начинается<br/><i>с хорошей<br/>компании</i></>},
+ {id:'snow',name:'Зимний лес',type:'Заснеженные ели',color:'#304e54',description:'Заснеженный еловый лес, спокойные зимние оттенки и вечер в хорошей компании.',headline:<>Новый год<br/><i>среди своих</i></>},
  {id:'berries',name:'Ягоды в инее',type:'Хвоя и красные ягоды',photo:'frosted-berries.jpg',alt:'Заснеженная хвоя с красными ягодами и золотыми игрушками'},
  {id:'lights',name:'Ёлочные огни',type:'Красные и золотые шары',photo:'festive-baubles.jpg',alt:'Красные и золотые шары на заснеженной ёлке'},
  {id:'ribbon',name:'Бархатная лента',type:'Бордовый и золото',photo:'frosted-berries.jpg',alt:'Заснеженная хвоя с красными ягодами и золотыми игрушками'},
@@ -34,8 +34,8 @@ const variants = [
  {id:'retro',name:'Ретроэкспресс',type:'Диагональная композиция'},
  {id:'editorial',name:'Золотой выпуск',type:'Журнальная обложка',photo:'frosted-berries.jpg',alt:'Хвоя и праздничные красные ягоды'},
  {id:'postcard',name:'Письмо из Лесного',type:'Светлая зимняя открытка',photo:'snow-forest.jpg',alt:'Заснеженный еловый лес'},
- {id:'modernist',name:'Новогодний плакат',type:'Крупный шрифт и горчичный цвет',headline:<>НОВЫЙ<br/>ГОД.</>},
- {id:'geometry',name:'Праздничный ритм',type:'Графические ёлочные шары',headline:<>Новый год<br/><i>в кругу своих.</i></>},
+ {id:'modernist',name:'Новогодний плакат',type:'Крупный шрифт и горчичный цвет',headline:<>НОВЫЙ<br/>ГОД</>},
+ {id:'geometry',name:'Праздничный ритм',type:'Графические ёлочные шары',headline:<>Новый год<br/><i>в кругу своих</i></>},
  {id:'nightframe',name:'Вечер в огнях',type:'Фотография на весь лист',photo:'emerald-spruce.jpg',alt:'Нарядная ель с красными шарами и гирляндой'},
  {id:'alpine',name:'Лесной маршрут',type:'Альпийский постер',photo:'sunlit-spruce.jpg',alt:'Солнечный еловый лес с новогодними шарами',headline:<>НОВЫЙ ГОД<br/>В ЛЕСНОМ</>},
 ];
@@ -50,14 +50,14 @@ function Poster({variant, miniature=false, nodeRef}){
    {v.photo&&<img className="still-life" src={import.meta.env.BASE_URL+"assets/"+v.photo} alt={v.alt}/>}
    {v.id==='snow'&&<img className="still-life" src={import.meta.env.BASE_URL+"assets/snow-forest.jpg"} alt="Заснеженный еловый лес"/>}
    {v.id==='ticket'&&<div className="ticket-stamp" aria-hidden="true">ПРОПУСК<br/><b>В ПРАЗДНИК</b></div>}
-   <div className="poster-hero-text"><div className="poster-eyebrow">{v.id === 'typewall' ? <>ВЕЧЕРИНКА<br/>СОВЕТСКОГО<br/>СОЮЗА</> : 'ВЕЧЕРИНКА СОВЕТСКОГО СОЮЗА'}</div><h2>{v.headline ?? variants[0].headline}</h2><p className="poster-tagline">{(v.id==='classic'||v.photo)?<>Вечер для тех,<br/>с кем прошёл этот год.</>:<>Коллеги становятся ближе.<br/>Работа подождёт.</>}</p></div>
+   <div className="poster-hero-text"><div className="poster-eyebrow">{v.id === 'typewall' ? <>ВЕЧЕРИНКА<br/>СОВЕТСКОГО<br/>СОЮЗА</> : 'ВЕЧЕРИНКА СОВЕТСКОГО СОЮЗА'}</div><h2>{v.headline ?? variants[0].headline}</h2><p className="poster-tagline">{(v.id==='classic'||v.photo)?<>Вечер для тех,<br/>с кем прошёл этот год</>:<>Коллеги становятся ближе<br/>Работа подождёт</>}</p></div>
    {v.id==='blue'&&<div className="orbit" aria-hidden="true"><Asterisk aria-hidden="true" strokeWidth={1.2}/></div>}
   </div>
   <div className="poster-offer"><div className="offer-heading">Встречаемся в «Лесном»</div><div className="prices"><Price amount="6 000">Сборные коллективы<br/>с нашей программой</Price><Price amount="5 000">Компании от 60 человек<br/>со своей программой</Price></div>
-  <div className="alcohol"><span className="alcohol-star"><Asterisk aria-hidden="true" strokeWidth={1.2}/></span><p>Ваш алкоголь — в любом количестве.<br/><b>Пробковый сбор — 0 ₽.</b></p></div>
+  <div className="alcohol"><span className="alcohol-star"><Asterisk aria-hidden="true" strokeWidth={1.2}/></span><p>Ваш алкоголь — в любом количестве<br/><b>Пробковый сбор — 0 ₽</b></p></div>
   <div className="poster-footer"><span>Узнайте свободные даты<br/><b>и соберите своих</b></span><div><Contact href={miniature?undefined:"tel:+79107202212"}>+7 910 720-22-12</Contact><Contact href={miniature?undefined:"tel:+79156483819"}>+7 915 648-38-19</Contact></div></div>
   </div>
-  {v.id==='ticket'&&<div className="ticket-code" aria-hidden="true">Л Е С Н О Й  •  Н О В Ы Й  Г О Д  •  В С Е  С В О И</div>}
+  {v.id==='ticket'&&<div className="ticket-code" aria-hidden="true">Л Е С Н О Й  —  Н О В Ы Й  Г О Д  —  В С Е  С В О И</div>}
  </article>
 }
 function App(){
